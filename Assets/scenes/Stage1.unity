@@ -300,6 +300,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114855662132250240, guid: ad38c719a970ce246b521d936cc8b81b,
+        type: 2}
+      propertyPath: hp
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad38c719a970ce246b521d936cc8b81b, type: 2}
   m_IsPrefabParent: 0
@@ -424,11 +429,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4372179136318802, guid: 8aaa1dfeb47e995418cb5170900d8f9b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -10.028478
+      value: -9.23
       objectReference: {fileID: 0}
     - target: {fileID: 4372179136318802, guid: 8aaa1dfeb47e995418cb5170900d8f9b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.35020018
+      value: -2.97
       objectReference: {fileID: 0}
     - target: {fileID: 4372179136318802, guid: 8aaa1dfeb47e995418cb5170900d8f9b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -793,3 +798,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 50, y: 50}
+--- !u!114 &2066983019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2066983015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd3557e171e89ce4f976cb736897f9eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 4145731382378822, guid: e06bc1f48ab0aaa4da116954e04f22c7, type: 2}
+  shootingRate: 0.25
