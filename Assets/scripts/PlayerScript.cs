@@ -57,7 +57,7 @@ public class PlayerScript : MonoBehaviour {
 
         transform.position = new Vector3(
             Mathf.Clamp(transform.position.x, leftBorder, rightBorder),
-            Mathf.Clamp(transform.position.y, topBorder, bottomBorder),
+            Mathf.Clamp(transform.position.y, topBorder, bottomBorder)
         );
 
         // End of the update method
