@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Handle hitpoints and damages
@@ -11,11 +12,22 @@ public class HealthScript : MonoBehaviour {
     /// Total hitpoints
     /// </summary>
     public int hp = 1;
+    public Text healthText;
 
     /// <summary>
     /// Enemy or player?
     /// </summary>
     public bool isEnemy = true;
+
+    void Start()
+    {
+        // Initialise the health counter text
+        if (healthText != null)
+        {
+            healthText.text = "Health: " + hp.ToString();
+        }
+
+    }
 
     /// <summary>
     /// Inflicts damage and check if the object should be destroyed
@@ -25,6 +37,10 @@ public class HealthScript : MonoBehaviour {
     public void Damage(int damageCount)
     {
         hp -= damageCount;
+        if (healthText != null)
+        {
+            healthText.text = "Health: " + hp.ToString();
+        }
 
         if (hp <= 0)
         {
