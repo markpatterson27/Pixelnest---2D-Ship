@@ -186,4 +186,18 @@ public class BossScript : MonoBehaviour
             Gizmos.DrawSphere(positionTarget, 0.25f);
         }
     }
+
+    //void LevelEnd()
+    //{
+    //    var gameOver = FindObjectOfType<GameOverScript>();
+    //    gameOver.ShowButtons();
+    //}
+
+    void OnDestroy()
+    {
+        //Invoke("LevelEnd", 2);
+        var gameOver = FindObjectOfType<GameOverScript>();
+        gameOver.ShowButtons();
+    }
+
 }
