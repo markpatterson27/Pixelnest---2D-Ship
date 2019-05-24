@@ -89,6 +89,7 @@ public class EnemyScript : MonoBehaviour {
         foreach (WeaponScript weapon in weapons)
         {
             weapon.enabled = true;
+            SoundEffectsHelper.Instance.MakeEnemyShotSound();
         }
     }
 }
