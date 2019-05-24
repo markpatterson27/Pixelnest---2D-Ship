@@ -290,6 +290,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 194545307}
+  - component: {fileID: 194545308}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -310,6 +311,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &194545308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 194545306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d7c49c7f8ab5ac44b210007e2373a3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokeEffect: {fileID: 198829149108419710, guid: a33258b2311b4c14eb9e72dfc5f4bd9a,
+    type: 2}
+  fireEffect: {fileID: 198981004563687364, guid: 86d345cd321d51046bcd268b8bcfc453,
+    type: 2}
 --- !u!1001 &231889307
 Prefab:
   m_ObjectHideFlags: 0
