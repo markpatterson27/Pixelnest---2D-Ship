@@ -16,9 +16,9 @@ public class PlayerScript : MonoBehaviour {
     // 2 - Store the movement and the component
     private Vector2 movement;
     private Rigidbody2D rigidbodyComponent;
-    
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 
         // 3 - Retrieve axis information
         float inputX = Input.GetAxis("Horizontal");
