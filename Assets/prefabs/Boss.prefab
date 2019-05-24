@@ -54,6 +54,8 @@ GameObject:
   - component: {fileID: 50177813591567140}
   - component: {fileID: 61835626245470782}
   - component: {fileID: 95762840181906812}
+  - component: {fileID: 114850995927603010}
+  - component: {fileID: 114850425985763344}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -255,6 +257,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114850425985763344
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1214251430341088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914c27e2a8e45854cb019c0276d1df93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 5, y: 5}
+  direction: {x: -1, y: 0}
+--- !u!114 &114850995927603010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1214251430341088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88bc865fe566904681d92705bfd18c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 50
+  isEnemy: 1
 --- !u!212 &212133936129127536
 SpriteRenderer:
   m_ObjectHideFlags: 1
