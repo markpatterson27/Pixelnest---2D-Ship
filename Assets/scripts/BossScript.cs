@@ -197,7 +197,7 @@ public class BossScript : MonoBehaviour
     {
         //Invoke("LevelEnd", 2);
         var gameOver = FindObjectOfType<GameOverScript>();
-        gameOver.ShowButtons();
+        gameOver.ShowItems();
     }
 
 }

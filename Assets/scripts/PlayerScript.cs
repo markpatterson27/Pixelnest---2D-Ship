@@ -103,7 +103,7 @@ public class PlayerScript : MonoBehaviour {
     {
         // Game Over.
         var gameOver = FindObjectOfType<GameOverScript>();
-        gameOver.ShowButtons();
+        gameOver.ShowItems();
     }
 
 }
