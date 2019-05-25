@@ -13,6 +13,7 @@ public class HealthScript : MonoBehaviour {
     /// </summary>
     public int hp = 1;
     public Text healthText;
+    private int hpe = 0;
 
     /// <summary>
     /// Enemy or player?
@@ -21,6 +22,8 @@ public class HealthScript : MonoBehaviour {
 
     void Start()
     {
+        hpe = hp;
+
         // Initialise the health counter text
         if (healthText != null)
         {
@@ -37,9 +40,10 @@ public class HealthScript : MonoBehaviour {
     public void Damage(int damageCount)
     {
         hp -= damageCount;
+        hpe += damageCount;
         if (healthText != null)
         {
-            healthText.text = "Health: " + hp.ToString();
+            healthText.text = "Health: " + hpe.ToString();
         }
 
         if (hp <= 0)
