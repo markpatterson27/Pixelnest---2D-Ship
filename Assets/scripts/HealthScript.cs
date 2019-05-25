@@ -65,7 +65,7 @@ public class HealthScript : MonoBehaviour {
         if (shot != null)
         {
             // Avoid friendly fire
-            if (shot.isEnemyShot != isEnemy)
+            if ((shot.isEnemyShot == false) && (isEnemy == true))
             {
                 Damage(shot.damage);
 
